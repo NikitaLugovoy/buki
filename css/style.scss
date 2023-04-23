@@ -64,7 +64,7 @@ body {
 
 
 .wrap {
-    max-width: 1170px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -162,7 +162,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 150px;
-
     p{
         font-family: 'Open Sans', sans-serif;
         text-align: center;
@@ -177,3 +176,98 @@ body {
         }
     }
 }
+
+
+
+.block-karta{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.page-about{
+    background-color: #f2f2f2;
+}
+
+.block-about{
+    display: flex;
+    flex-direction: column;
+    .about-contener{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .about-fichers{
+            width: 550px;
+            text-align: justify;
+            .block-text{
+
+                &__description{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 20px;
+                    font-style: bold;
+                }
+
+            }
+            &__icon{
+                height: 40px;
+                align-items: center;
+                display: flex;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content:center;
+                    i{
+                        font-size: 24px;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+        .about-table{
+            width: 450px;
+            &__spisok{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 170px;
+                row-gap:10px;
+                column-gap: 20px;
+            }
+            .block-text{
+                &__description{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 20px;
+                    font-style: bold;
+                }
+                &__btn{
+                    margin-top: 0;
+                    width: 100px;
+                }
+            }
+            ol{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style: none;
+            }
+            i{
+                padding-right: 5px;
+            }
+        }
+        
+    }
+    
+    .block-text{
+        
+        &__title{
+            text-align: center;
+        }
+    }
+}
+
